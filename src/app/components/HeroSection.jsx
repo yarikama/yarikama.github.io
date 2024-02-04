@@ -11,7 +11,8 @@ const HeroSection = () => {
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#f6d365] to-[#fda085]">
-                            你好，我是{" "}
+                            你好，我是
+                            {" "} 
                         </span>
                         <TypeAnimation
                         sequence={[
@@ -25,17 +26,20 @@ const HeroSection = () => {
                         repeat={Infinity}
                         />
                     </h1>
-                    <p className="text-[#85abc6] text-base sm:text-lg mb-6 lg:text-xl">
-                        歡迎來到我的個人網站，目前應徵後端實習中！
+                    <p className="text-[#cfcfcf] text-base sm:text-lg mb-6 lg:text-xl">
+                        歡迎來到我的個人網站，請隨意坐坐～<br/>
+                        目前就讀交大工工系四年級，應徵後端實習中，預計將在2024年6月畢業後上班，有興趣請務必點擊右上角聯絡我！
                     </p>
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-200 text-black">
-                            關於我
-                        </button>
+                        <Link href="/documents/Heng_Jui_Hsu_grading.pdf" download>
+                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-200 text-black">
+                                在校成績
+                            </button>
+                        </Link>
                         <Link href="/documents/Heng_Jui__Hsu_Curriculum_Vitae.pdf" download>
-                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#8b89c7] to-[#4f8396] hover:bg-slate-800 text-white mt-3">
+                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-800 text-white mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                    下載履歷
+                                    個人履歷
                                 </span>
                             </button>
                         </Link>
