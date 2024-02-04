@@ -39,9 +39,10 @@ const TAB_DATA = [
         image: '/images/經驗.png',
         content: (
             <ul className='list-disc pl-2'>
-                <li>工業工程與管理學系系學會會長</li>
-                <li>陽明交大管院院務學生代表</li>
-                <li>ATCC全國商業競賽 複賽決選</li>
+                <li>國立陽明交大工業工程與管理學系 系學會會長</li>
+                <li>國立陽明交大管院院務會議 學生代表</li>
+                <li>ATCC全國商業競賽 複賽決選（20/2000）</li>
+                <li>國高中理科家教經驗 大一~大三</li>
             </ul>
         )
     },{
@@ -74,22 +75,22 @@ const AboutSection = () => {
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
             <Image src={currentImage} width={600} height={500} />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'> 
-                <h2 className='text-4xl flex font-bold text-[#ffffff] mb-4 my-2'>
+                <h2 className='text-4xl  flex font-bold text-[#ffffff] mb-1 my-2'>
                     關於我 
                     <Link href="https://github.com/yarikama">
-                        <DiGithubBadge className='inline-block text-5xl mx-1 text-[#e1e1e1]'/>
+                        <DiGithubBadge className='inline-block text-4xl mx-6 text-[#e1e1e1]'/>
                     </Link>
                     <Link href="https://linkedin.com/in/yarikama">
-                        <FaLinkedin className='inline-block text-5xl mx-1 text-[#44a3da]'/>
+                        <FaLinkedin className='inline-block text-3xl mx-1 text-[#44a3da]'/>
                     </Link>
                 </h2>
-                <p className='text-base text-blue-400 lg:text-lg'>
+                <p className='text-base text-center text-blue-400 lg:text-lg'>
                     熱愛學習  |  程式開發  |  領導管理  |  競賽挑戰 <br/>
                 </p>
                 <p className='text-base text-white lg:text-lg'>  
                     我在大學中做過大大小小不同的嘗試。不論是跨領域的課程，或是課外學生組織的活動。我喜歡學習新事物，並且能夠將所學應用在實際的專案中。我也喜歡帶領團隊，更喜歡在競賽中挑戰自己。我期待能夠在未來的工作中，找到一個能夠讓我持續學習，並且能夠發揮所長的工作環境。
                 </p>
-                <div className='flex flex-row justify-start mt-8'>
+                <div className='flex flex-row place-self-center justify-start mt-8'>
                     <TapButton selectTab={() => handleTabChange('學歷')} active={tab === '學歷'}>學歷</TapButton>
                     <TapButton selectTab={() => handleTabChange('技能')} active={tab === '技能'}>技能</TapButton>
                     <TapButton selectTab={() => handleTabChange('經驗')} active={tab === '經驗'}>經驗</TapButton>

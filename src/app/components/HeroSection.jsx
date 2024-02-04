@@ -26,8 +26,8 @@ const HeroSection = () => {
                         repeat={Infinity}
                         />
                     </h1>
-                    <p className="text-[#cfcfcf] text-base sm:text-lg mb-6 lg:text-xl">
-                        歡迎來到我的個人網站，請隨意坐坐～<br/>
+                    <p className="text-[#cfcfcf] text-base sm:text-lg mb-6 mx-3 lg:text-xl">
+                        歡迎來到我的個人網站，請隨意逛～<br/>
                         目前就讀交大工工系四年級，應徵後端實習中，預計將在2024年6月畢業後上班，有興趣請務必點擊右上角聯絡我！
                     </p>
                     <div>
@@ -45,14 +45,14 @@ const HeroSection = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="col-span-5 place-self-center mt-4 lg:mg-0">
-                    <div className="rounded-full bg-[#448ea4] w-[250px] h-[250px] relative">
+                <div className="col-span-5 place-self-center mt-4 mx-4 lg:mg-0">
+                    <div className="rounded-full bg-[#448ea4] w-[240px] h-[240px] relative">
                         <Image
                             src="/images/HH_Portrait.png"
                             alt="hero image"
                             className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                            width={300}
-                            height={300}
+                            width={230}
+                            height={230}
                         />
                     </div> 
                 </div>
