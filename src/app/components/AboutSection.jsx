@@ -14,9 +14,9 @@ const TAB_DATA = [
         image: '/images/學歷.png',
         content: (
             <ul className='list-disc pl-2'>
-                <li>市立高雄中學畢業</li>
+                <li>高雄市立高級中學畢業</li>
                 <li>國立陽明交通大學 工業工程與管理學系</li>
-                <li>輔系 資訊工程學系</li>
+                <li>國立陽明交通大學 輔系 資訊工程學系</li>
                 <li>三次書卷獎</li>
                 <li>GPA 4.05/4.30 Over 151 Credits</li>
                 <li>Last 60 GPA 4.15/4.30</li>
@@ -72,17 +72,11 @@ const AboutSection = () => {
     const currentImage = currentTabData ? currentTabData.image : "/images/學歷.png"; 
   return (
     <section className='text-[#f1f1f1]'>
-        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-0'>
-            <Image src={currentImage} width={600} height={500} alt="" />
-            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'> 
-                <h2 className='text-4xl  flex font-bold text-[#ffffff] mb-1 my-2'>
+        <div className='md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-0'>
+            <Image src={currentImage} width={800} height={500} alt="" />
+            <div className='mt-4 md:mt-0 flex flex-col h-full'> 
+                <h2 className='text-4xl flex justify-center font-bold text-[#ffffff] mb-1 my-2'>
                     關於我 
-                    <Link href="https://github.com/yarikama">
-                        <DiGithubBadge className='inline-block text-4xl mx-6 text-[#e1e1e1]'/>
-                    </Link>
-                    <Link href="https://linkedin.com/in/yarikama">
-                        <FaLinkedin className='inline-block text-3xl mx-1 text-[#44a3da]'/>
-                    </Link>
                 </h2>
                 <p className='text-base text-center text-blue-400 lg:text-lg'>
                     熱愛學習  |  程式開發  |  領導管理  |  競賽挑戰 <br/>
@@ -90,7 +84,7 @@ const AboutSection = () => {
                 <p className='text-base text-white lg:text-lg'>  
                     我在大學中做過大大小小不同的嘗試。不論是跨領域的課程，或是課外學生組織的活動。我喜歡學習新事物，並且能夠將所學應用在實際的專案中。我也喜歡帶領團隊，更喜歡在競賽中挑戰自己。我期待能夠在未來的工作中，找到一個能夠讓我持續學習，並且能夠發揮所長的工作環境。
                 </p>
-                <div className='flex flex-row place-self-center justify-start mt-8'>
+                <div className='flex flex-row text-left place-self-center justify-start mt-8'>
                     <TapButton selectTab={() => handleTabChange('學歷')} active={tab === '學歷'}>學歷</TapButton>
                     <TapButton selectTab={() => handleTabChange('技能')} active={tab === '技能'}>技能</TapButton>
                     <TapButton selectTab={() => handleTabChange('經驗')} active={tab === '經驗'}>經驗</TapButton>

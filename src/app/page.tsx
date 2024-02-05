@@ -6,9 +6,9 @@ import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] "> {/* 背景黑色、按垂直排列 */}
+    <main className="flex min-h-screen flex-col bg-[#121212] "> 
       <Topbar />
-      <div className="container mt-24 px-12 py-4">
+      <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <AboutSection />
         <ProjectSection />

@@ -28,8 +28,8 @@ const Topbar = () => {
             <Link 
                   href={"/"} 
                   className='text-2xl md:text-5xl text-white font-semibold'>
-              <p className="font-sans text-[#cad7dc] rounded bg-gradient-to-br from-[#31517e] to-[#4c5254]">
-                Hsu&apos;s Profolio
+              <p className="font-sans text-[#dadada] rounded bg-gradient-to-br from-[#67a9c3] via-[#5c76b6] to-[#266e8b]">
+                Hsu&apos;s Profile
               </p>
             </Link>
             <div className="mobile-menu block md:hidden">
