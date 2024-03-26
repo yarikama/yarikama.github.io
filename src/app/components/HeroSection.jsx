@@ -23,6 +23,8 @@ const HeroSection = () => {
                             2000, 
                             'Heng Jui, Hsu!',
                             2000,
+                            'Yarikama!',
+                            2000,
                         ]}
                         wrapper="span"
                         speed={5}
@@ -30,17 +32,22 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#cfcfcf]  text-base sm:text-lg mb-6 mx-3 lg:text-xl">
-                        目前就讀交大工工系四年級，應徵後端實習中，預計將在2024年6月畢業後上班，有興趣請務必點擊右上角聯絡我！
+                        目前就讀交大工工系四年級，應徵實習中，預計將在2024年6月畢業後上班，有興趣請務必點擊右上角聯絡我！
                         歡迎來到我的個人網站，請隨意逛逛～<br/>
                     </p>
                     <div>
-                        <Link href="/documents/Heng_Jui_Hsu_grading.pdf" download>
+                        <Link href="/documents/許恒睿_中文成績單.pdf" download>
                             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-200 text-black">
                                 在校成績
                             </button>
                         </Link>
-                        <Link href="/documents/Heng_Jui__Hsu_Curriculum_Vitae.pdf" download>
-                            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-800 text-white mt-3">
+                        <Link href="/documents/Heng_Jui_Hsu_Transcript.pdf" download>
+                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#63c0ff] to-[#9e56fc] hover:bg-slate-200 text-black mt-3">
+                                英文成績
+                            </button>
+                        </Link>
+                        <Link href="/documents/Heng_Jui_Hsu_Curriculum_Vitae.pdf" download>
+                            <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#f6d365] to-[#fda085] hover:bg-slate-800 text-white mt-3">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                     個人履歷
                                 </span>
