@@ -22,7 +22,7 @@ const projectsData = [
         id: 3,
         title: '書店網站',
         description: '書店網站',
-        image: '/images/書店網站.png',
+        image: '/images/BookStore.png',
         tag: ["All", "Web", "Python", "PHP", "mySQL", "Bootstrap"],
         gitUrl: '/',
         previewUrl: '/'
