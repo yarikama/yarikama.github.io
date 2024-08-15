@@ -21,7 +21,7 @@ const projectsData = [
     },{
         id: 3,
         title: '書店網站',
-        description: '書店網站',
+        description: '建立書店網站後端，爬蟲抓取書籍資料建立資料庫，實現功能有提供會員購物車、商品列表、運送貨物資訊等等，並同時配合 Bootstrap 5 樣板提供前端。',
         image: '/images/BookStore.png',
         tag: ["All", "Web", "Python", "PHP", "mySQL", "Bootstrap"],
         gitUrl: '/',
